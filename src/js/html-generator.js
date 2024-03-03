@@ -1,5 +1,6 @@
 import icons from "../img/icons.svg"; // parcel 1
 import { existence } from "./helpers.js";
+
 //generate ingredients html template that is not exported but used here
 //generate ingredients html template that is not exported but used here
 //generate ingredients html template that is not exported but used here
@@ -9,11 +10,7 @@ function generateIgredientHTML(ing) {
       <svg class="recipe__icon">
         <use href="${icons}#icon-check"></use>
       </svg>
-      <div class="recipe__quantity">${
-        typeof existence(ing.quantity) === "number"
-          ? new Fraction(existence(ing.quantity)).toString()
-          : existence(ing.quantity)
-      }</div>
+      <div class="recipe__quantity">${existence(ing.quantity)}</div>
       <div class="recipe__description">
         <span class="recipe__unit">${existence(ing.unit)}</span>
         ${existence(ing.description)}

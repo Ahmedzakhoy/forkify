@@ -9,14 +9,11 @@
   },
   "author": "Ahmed Mustafa",
   "license": "ISC",
-  "devDependencies": {
-    "@parcel/transformer-sass": "^2.6.1",
-    "parcel": "^2.6.1"
-  },
   "dependencies": {
     "core-js": "^3.23.1",
-    "fractional": "^1.0.0",
-    "regenerator-runtime": "^0.13.9",
-    "sass": "^1.52.3"
+    "regenerator-runtime": "^0.13.9"
+  },
+  "devDependencies": {
+    "parcel": "^2.12.0"
   }
 }

@@ -1,4 +1,3 @@
-import { fraction } from "../../node_modules/fractional";
 import {
   createRecipeObject,
   showSpinner,
@@ -136,7 +135,7 @@ const showRecipe = async function () {
     //load spinner
     showSpinner(recipeContainerEl);
     //0) update results view to mark selected search results
-    dataList =
+    const dataList =
       state.showResults === "search"
         ? state.search
         : state.showResults === "own-recipes"
@@ -349,7 +348,7 @@ addRecipeContainerEl.addEventListener("submit", function (event) {
 });
 
 addRecipeContainerEl.addEventListener("click", function (event) {
-  btn = event.target.closest(".add-ingredient__btn");
+  const btn = event.target.closest(".add-ingredient__btn");
   if (!btn) return;
   const lastIngredientLabel = addRecipeContainerEl.querySelector(
     ".upload__column__ingredients div:nth-last-child(2) label"
