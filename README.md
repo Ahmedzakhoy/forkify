@@ -1,0 +1,3 @@
+deploying this project with github pages didn't work so it was deployed on netlify instead...
+this is the link to the deployment
+https://forkify-ahmed-mustafa.netlify.app/
